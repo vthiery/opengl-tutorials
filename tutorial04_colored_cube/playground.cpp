@@ -60,7 +60,7 @@ int main()
 	glBindVertexArray(vertexArrayID);
 
 	// Create and compile our GLSL program from the shaders
-	const GLuint programID = LoadShaders("shaders/SimpleVertexShader.vertexshader", "shaders/SimpleFragmentShader.fragmentshader");
+	const GLuint programID = LoadShaders("shaders/TransformVertexShader.vertexshader", "shaders/ColorFragmentShader.fragmentshader");
 
 	// Handle for MVP
 	const GLuint MatrixID = glGetUniformLocation(programID, "MVP");
